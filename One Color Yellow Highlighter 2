@@ -1,0 +1,34 @@
+// NeoPixel Ring simple sketch (c) 2013 Shae Erisson
+// released under the GPLv3 license to match the rest of the AdaFruit NeoPixel library
+
+#include <Adafruit_NeoPixel.h>
+#ifdef __AVR__
+  #include <avr/power.h>
+#endif
+
+//adressed pin
+#define PIN            10
+
+//LED-number/count
+#define NUMPIXELS      5
+
+Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
+
+int delayval = 500; // delay 0,5 seconds
+
+void setup() {
+
+  pixels.begin(); // initialization of NeoPixel library.
+}
+
+void loop() {
+
+  for(int i=0;i<NUMPIXELS;i++){
+
+    // pixels.Color takes RGB values, from 0,0,0 up to 255,255,255
+    pixels.setPixelColor(i, pixels.Color(150,2150,0));
+    pixels.show();
+    delay(delayval);
+
+  }
+}
