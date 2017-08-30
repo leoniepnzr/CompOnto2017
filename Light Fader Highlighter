@@ -1,0 +1,45 @@
+#include <Adafruit_NeoPixel.h>
+
+#define PIN 10
+
+int numPixels = 5;
+
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(numPixels, PIN, NEO_GRB + NEO_KHZ800);
+
+void setup() {
+  strip.begin();
+  strip.show();
+}
+
+void loop() {
+  brighten();
+  darken();
+}
+
+void brighten() {
+  unsigned short i, j;
+
+  for (j = 25; j < 255; j++) {
+    for (i = 0; i < strip.numPixels(); i++) {
+      strip.setPixelColor(i, j, j, j);
+    }
+    strip.show();
+    delay(10);
+  }
+  delay(1000);
+}
+
+void darken() {
+  Serial.begin(9600);
+  unsigned short i, j;
+
+  for (j = 255; j > 25; j--) {
+    for (i = 0; i < strip.numPixels(); i++) {
+      strip.setPixelColor(i, j, j, j);
+    }
+    strip.show();
+    delay(10);
+    Serial.println(j);
+  }
+  delay(1500);
+}                     
