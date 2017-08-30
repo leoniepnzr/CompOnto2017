@@ -14,10 +14,6 @@ Our LED jewellery – for everyone who likes to be extra.
 
 ______________________________________________________________________________
 
-Find the video here:
-
-______________________________________________________________________________
-
 Equipment needed:
 
 - Microcontroller, like Gemma or Flora (by Adafruit)
@@ -81,12 +77,6 @@ For the hair jewellery, we clipped the controller into the hair on the back of t
 For the highlighter, we clipped the controller into the hair on the side of the head and attached the LEDs to the skin, using liquid latex. Just apply the latex to the back of a LED, with a brush and press it onto the skin. Hold it in place for a few seconds to let it dry and make sure nothing shifts. If you want an extra special effect, apply additional powder highlighter and/or glitter onto your cheekbones, above the LEDs.
 
 Using the same method, you can accessorise costumes with the LED jewellery as well, e.g. for Halloween. Apply the latex to the back of the LEDs and attach them to any exposed part of the face of body, to complete your outfit and use make up to boost the effect further. Using it on the face, it can also be viewed as your personal, offline snapchat filter.
-
-Code:
-
-The codes we used to upload them onto the LED jewellery can be found here:
-
--
 
 The main purpose of the LED jewellery is to have fun with it.
 
